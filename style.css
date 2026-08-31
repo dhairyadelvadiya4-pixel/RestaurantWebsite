@@ -517,6 +517,168 @@ footer p {
     display: none;
 }
 
+/*---------------------
+-----------------------
+    For About.html page
+-----------------------
+-----------------------*/  
+
+.about-hero{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:400px;
+    padding:150px 50px 70px;
+    background-color:var(--dark-color);
+    text-align:center;
+}
+
+.about-hero-content{
+    max-width:700px;
+    color:var(--white-color);
+}
+
+.about-hero-label{
+    letter-spacing:1.5px;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size:18px;
+    margin-bottom: 20px;
+}
+
+.about-hero-content h1{
+    color: var(--white-color);
+    font-size:45px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.about-hero-content > p:last-child{
+    color: var(--cream-color);
+    font-size:18px;
+    line-height:1.5;
+}
+
+/*story section*/
+
+.our-story{
+    display:flex;
+    align-items:center;
+    padding:70px 50px;
+    gap:30px;
+}
+
+.story-image {
+    width: 50%;
+}
+
+.story-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.story-content{
+    width:50%;
+}
+
+.section-label{
+    color:var(--primary-color);
+    font-size:18px;
+    font-weight:bold;
+    letter-spacing:1.5px;
+    margin-bottom:20px;
+}
+
+.story-content h2{
+    font-size:35px;
+    font-weight:bold;
+    line-height:1.2;
+    letter-spacing:1.5px;
+    margin-bottom:20px;
+}
+
+.story-content p{
+    color:var(--light-text-color);
+    font-size:18px;
+    line-height:1.5;
+    margin-bottom:20px;
+}
+
+/*mission section*/
+
+.mission-vision{
+    background-color:var(--cream-color);
+    text-align:center;
+    padding:70px 50px;
+}
+
+.mission-container{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+.mission-card{
+    background:var(--white-color);
+    padding:30px;
+    border-radius:8px;
+    text-align:center;
+    box-shadow:0 4px 15px rgba(0, 0, 0, 0.08);
+    transition:0.3s ease;
+}
+
+.mission-card h3{
+    font-size:18px;
+    font-weight:bold;
+    color:var(--text-color);
+    margin-bottom:10px;
+}
+
+.mission-card p{
+    color:var(--light-text-color);
+    font-size:16px;
+    line-height:1.5;
+}
+
+/*why-choose section*/
+
+.why-choose{
+    background-color:var(--white-color);
+    text-align:center;
+    padding:70px 50px;
+}
+
+.why-container{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+.why-card{
+    background:var(--white-color);
+    padding:30px;
+    border-radius:8px;
+    text-align:center;
+    box-shadow:0 4px 15px rgba(0, 0, 0, 0.08);
+    transition:0.3s ease;
+}
+
+.why-card h3{
+    font-size:18px;
+    font-weight:bold;
+    color:var(--text-color);
+    margin-bottom:10px;
+}
+
+.why-card p{
+    color:var(--light-text-color);
+    font-size:16px;
+    line-height:1.5;
+}
+
+.why-card:hover{
+    transform:translateY(-5px);
+}
 
 /*for small laptop or tablet*/
 
@@ -601,6 +763,27 @@ footer p {
     }
 
     .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+        .our-story {
+        flex-direction: column;
+    }
+
+    .story-image,
+    .story-content {
+        width: 100%;
+    }
+
+    .story-content {
+        text-align: center;
+    }
+
+    .mission-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .why-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -738,5 +921,45 @@ footer p {
 
     .copyright {
         padding: 20px;
+    }
+
+        .about-hero {
+        padding: 120px 20px 60px;
+        min-height: 350px;
+    }
+
+    .about-hero-content h1 {
+        font-size: 38px;
+    }
+
+    .about-hero-content > p:last-child {
+        font-size: 16px;
+    }
+
+    .our-story {
+        padding: 60px 20px;
+    }
+
+    .story-image,
+    .story-content {
+        width: 100%;
+    }
+
+    .story-content h2 {
+        font-size: 30px;
+    }
+
+    .story-content p {
+        font-size: 16px;
+    }
+
+    .mission-vision,
+    .why-choose {
+        padding: 60px 20px;
+    }
+
+    .mission-container,
+    .why-container {
+        grid-template-columns: 1fr;
     }
 }
