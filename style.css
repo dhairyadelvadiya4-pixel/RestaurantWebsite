@@ -680,9 +680,112 @@ footer p {
     transform:translateY(-5px);
 }
 
+/*---------------------
+-----------------------
+    For Menu.html page
+-----------------------
+-----------------------*/
+
+.menu-hero{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:400px;
+    padding:150px 50px 70px;
+    background-color:var(--dark-color);
+    text-align:center;
+}
+
+.menu-hero-content{
+    max-width:700px;
+    color:var(--white-color);
+}
+
+.menu-hero-label{
+    letter-spacing:1.5px;
+    color:var(--primary-color);
+    font-weight:bold;
+    font-size:18px;
+    margin-bottom:20px;
+}
+
+.menu-hero-content h1{
+    color:var(--white-color);
+    font-size:45px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.menu-hero-content > p:last-child{
+    color:var(--cream-color);
+    font-size:18px;
+    line-height:1.5;
+}
+
+/*menu-section*/
+
+.menu-section{
+    background-color:var(--white-color);
+    text-align:center;
+    padding:70px 50px;
+}
+
+.menu-section-alt{
+    background-color:var(--cream-color);
+}
+
+.menu-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.menu-card{
+    background:var(--cream-color);
+    text-align:center;
+    border-radius:8px;
+    overflow:hidden;
+    box-shadow:0 4px 15px rgba(0, 0, 0, 0.08);
+    transition:0.3s ease;
+}
+
+.menu-section-alt .menu-card{
+    background-color: var(--white-color);
+}
+
+.menu-card img{
+    width:100%;
+}
+
+.menu-card-content{
+    padding:20px;
+}
+
+.menu-card-content h3{
+    font-size:20px;
+    color:var(--text-color);
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+.menu-card-content p{
+    color:var(--light-text-color);
+    font-size:16px;
+    line-height:1.5;
+    margin-bottom:10px;
+}
+
+.menu-card-content span{
+    color:var(--primary-color);
+    font-size:18px;
+    font-weight:bold;
+}
+
+.menu-card:hover{
+    transform:translateY(-5px);
+}
+
 /*for small laptop or tablet*/
-
-
 @media (max-width: 900px) {
 
     nav ul {
@@ -785,6 +888,10 @@ footer p {
 
     .why-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu-container{
+        grid-template-columns:repeat(2,1fr);
     }
 }
 
@@ -923,7 +1030,7 @@ footer p {
         padding: 20px;
     }
 
-        .about-hero {
+    .about-hero {
         padding: 120px 20px 60px;
         min-height: 350px;
     }
@@ -961,6 +1068,35 @@ footer p {
     .mission-container,
     .why-container {
         grid-template-columns: 1fr;
+    }
+
+    .menu-hero {
+        padding: 120px 20px 60px;
+        min-height: 350px;
+    }
+
+    .menu-hero-content h1 {
+        font-size: 38px;
+    }
+
+    .menu-hero-content > p:last-child {
+        font-size: 16px;
+    }
+
+    .menu-section {
+        padding: 60px 20px;
+    }
+
+    .menu-container {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-card-content h3 {
+        font-size: 18px;
+    }
+
+    .menu-card-content p {
+        font-size: 16px;
     }
 }
 
